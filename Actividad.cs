@@ -8,11 +8,17 @@ namespace ProyectoTaskList
 {
     internal class Actividad
     {
-            public string? Nombre { get; set; }
-            public string? Descripcion { get; set; }
-            public string? Duracion { get; set; }
+        public Actividad(string? nombre, string? descripcion, string? duracion, int? prioridad)
+        {
+            Nombre = nombre;
+            Descripcion = descripcion;
+            Duracion = duracion;
+            Prioridad = prioridad;
+        }
 
-            public int? Prioridad { get; set; }
-        
+        public string? Nombre { get; set; }
+        public string? Descripcion { get; set; }
+        public string? Duracion { get; set; }
+        public int? Prioridad { get; set; }
     }
 }
